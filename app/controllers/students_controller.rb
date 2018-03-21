@@ -11,12 +11,6 @@ class StudentsController < ApplicationController
 
   def activate
     set_student
-    if @student.active
-      !@student.active
-    else
-      @student.active
-    end
-    redirect_to :students
   end
 
   private
