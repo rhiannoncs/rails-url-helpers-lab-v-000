@@ -16,6 +16,7 @@ class StudentsController < ApplicationController
     else
       @student.active
     end
+    redirect_to :students
   end
 
   private
